@@ -39,7 +39,7 @@ pygui-steganography is a Python-based GUI application that allows users to perfo
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/pygui-steganography.git
+git clone https://github.com/prakash-aryan/pygui-steganography.git
 ```
 
 Install dependencies:
