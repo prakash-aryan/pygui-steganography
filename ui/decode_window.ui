@@ -7,58 +7,18 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>550</height>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>LSB Steganography - Decode</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow {
-    background-color: #282a36;
-}
-
-QLabel {
-    color: #f8f8f2;
-    font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-QLineEdit {
-    background-color: #44475a;
-    color: #f8f8f2;
-    border: 1px solid #6272a4;
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-
-QPushButton {
-    background-color: #6272a4;
-    color: #f8f8f2;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-QPushButton:hover {
-    background-color: #8be9fd;
-    color: #282a36;
-}
-</string>
+   <string notr="true">QMainWindow { background-color: #282a36; } 
+QLabel { color: #f8f8f2; font-size: 14px; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 5px; } 
+QLineEdit { background-color: #44475a; color: #f8f8f2; border: 1px solid #6272a4; border-radius: 5px; padding: 5px; margin-left: 10px; margin-right: 10px; margin-top: 5px; margin-bottom: 10px; font-size: 14px; } 
+QPushButton { background-color: #6272a4; color: #f8f8f2; border: none; border-radius: 5px; padding: 10px; margin-left: 10px; margin-right: 10px; margin-top: 5px; margin-bottom: 10px; font-size: 14px; } 
+QPushButton:hover { background-color: #8be9fd; color: #282a36; }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -111,32 +71,29 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="lblDecodedText">
-      <property name="text">
-       <string>Decoded Text:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QTextEdit" name="txtDecodedText">
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QLabel" name="lblDecodedFilePath">
       <property name="text">
-       <string>Decoded File Path:</string>
+       <string>Decoded Data Path:</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="txtDecodedFilePath">
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="txtDecodedFilePath">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnViewDecodedData">
+        <property name="text">
+         <string>View Data</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
      <widget class="QPushButton" name="btnBack">
