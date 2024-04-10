@@ -103,19 +103,19 @@ QPushButton:hover {
      </layout>
     </item>
     <item>
-     <widget class="QLabel" name="lblFileToHide">
+     <widget class="QLabel" name="lblDataToHide">
       <property name="text">
-       <string>File to Hide:</string>
+       <string>Data to Hide:</string>
       </property>
      </widget>
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QLineEdit" name="txtFileToHide"/>
+       <widget class="QLineEdit" name="txtDataToHide"/>
       </item>
       <item>
-       <widget class="QPushButton" name="btnSelectFile">
+       <widget class="QPushButton" name="btnSelectData">
         <property name="text">
          <string>Select</string>
         </property>
